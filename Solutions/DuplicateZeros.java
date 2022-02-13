@@ -1,5 +1,3 @@
-package CodingQuestions;
-
 public class DuplicateZeros {
 
   /*

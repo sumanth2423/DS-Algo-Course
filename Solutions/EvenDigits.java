@@ -1,5 +1,3 @@
-package CodingQuestions;
-
 public class EvenDigits {
   public static void main(String[] args) {
     int[] nums = new int[] { 12, 342, 2242, 1134 };

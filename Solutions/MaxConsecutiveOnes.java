@@ -1,4 +1,3 @@
-package CodingQuestions;
 
 /*
 O(n) Time Complexity whe N is the number of elements in the array
