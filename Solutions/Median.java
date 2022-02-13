@@ -19,8 +19,8 @@ public class Median {
   double median = 0;
   int firstArrayIndex = 0;
   int secondArrayIndex = 0;
-
   int[] arr = new int[nums1.length + nums2.length];
+
   for (int i = 0; i < arr.length; i++) {
 
    if (firstArrayIndex < nums1.length && secondArrayIndex < nums2.length
