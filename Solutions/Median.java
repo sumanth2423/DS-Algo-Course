@@ -21,7 +21,6 @@ public class Median {
   int secondArrayIndex = 0;
 
   int[] arr = new int[nums1.length + nums2.length];
-  int length = arr.length;
   for (int i = 0; i < arr.length; i++) {
 
    if (firstArrayIndex < nums1.length && secondArrayIndex < nums2.length
@@ -48,10 +47,10 @@ public class Median {
    }
 
    if (i == arr.length / 2) {
-    if (length % 2 == 0) {
-     median = (double) ((arr[(length / 2) - 1] + arr[(length / 2)]) / 2.0);
+    if (arr.length % 2 == 0) {
+     median = (double) ((arr[(arr.length / 2) - 1] + arr[(arr.length / 2)]) / 2.0);
     } else {
-     median = arr[length / 2];
+     median = arr[arr.length / 2];
     }
    }
   }
