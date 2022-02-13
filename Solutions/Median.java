@@ -10,7 +10,7 @@ https://leetcode.com/problems/median-of-two-sorted-arrays/
 public class Median {
  public static void main(String[] args) {
   int[] nums1 = new int[] { 1, 2 };
-  int[] nums2 = new int[] { 3, 4 };
+  int[] nums2 = new int[] { 3, 4, 5 };
 
   System.out.println("The median on two arrays is: " + calculateMedian(nums1, nums2));
  }
@@ -21,33 +21,39 @@ public class Median {
   int secondArrayIndex = 0;
 
   int[] arr = new int[nums1.length + nums2.length];
-
+  int length = arr.length;
   for (int i = 0; i < arr.length; i++) {
 
    if (firstArrayIndex < nums1.length && secondArrayIndex < nums2.length
      && nums1[firstArrayIndex] <= nums2[secondArrayIndex]) {
+
     arr[i] = nums1[firstArrayIndex];
     firstArrayIndex++;
+
    } else if (firstArrayIndex < nums1.length && secondArrayIndex < nums2.length
      && nums2[secondArrayIndex] < nums1[firstArrayIndex]) {
+
     arr[i] = nums2[secondArrayIndex];
     secondArrayIndex++;
+
    } else if (firstArrayIndex < nums1.length) {
+
     arr[i] = nums1[firstArrayIndex];
     firstArrayIndex++;
+
    } else if (secondArrayIndex < nums2.length) {
+
     arr[i] = nums2[secondArrayIndex];
     secondArrayIndex++;
    }
 
-   int length = arr.length;
-
-   if (length % 2 == 0) {
-    median = (double) ((arr[(length / 2) - 1] + arr[(length / 2)]) / 2.0);
-   } else {
-    median = arr[length / 2];
+   if (i == arr.length / 2) {
+    if (length % 2 == 0) {
+     median = (double) ((arr[(length / 2) - 1] + arr[(length / 2)]) / 2.0);
+    } else {
+     median = arr[length / 2];
+    }
    }
-
   }
   return median;
  }
