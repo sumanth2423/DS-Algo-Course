@@ -1,4 +1,4 @@
-package Examples.ComparatorDemo;
+package ComparatorDemo;
 
 public class Vehicle {
 

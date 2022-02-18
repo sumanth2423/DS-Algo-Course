@@ -1,5 +1,3 @@
-package Examples;
-
 import java.util.Set;
 import java.util.TreeSet;
 import java.util.List;

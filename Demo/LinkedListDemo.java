@@ -1,5 +1,3 @@
-package Examples;
-
 import java.util.LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;

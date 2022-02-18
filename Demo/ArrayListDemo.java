@@ -1,6 +1,5 @@
-package Examples;
-
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 import java.util.ListIterator;
@@ -14,6 +13,9 @@ public class ArrayListDemo {
         list.add(2);
         list.add(7);
         list.add(5);
+
+        int[] a = { 1, 2, 3 };
+        Arrays.asList(a);
 
         System.out.println("The elements in the list are " + list);
 
@@ -37,15 +39,15 @@ public class ArrayListDemo {
 
         list.remove(1); // remove at index 1
 
-        list.remove(new Integer(100)); // remove a particulat element in the list
+        list.remove(Integer.valueOf(100)); // remove a particulat element in the list
 
         list.set(1, 199); // update an element at index 1
 
-        list.contains(new Integer(100)); // check if element exists
+        list.contains(100); // check if element exists
 
-        list.indexOf(new Integer(19)); // index of first occurance of the element
+        list.indexOf(19); // index of first occurance of the element
 
-        list.lastIndexOf(new Integer(233)); // index of last occurance of the element
+        list.lastIndexOf(233); // index of last occurance of the element
 
         for (int i = 0; i < list.size(); i++) {
             System.out.println("Looping List" + list.get(i));
@@ -58,8 +60,7 @@ public class ArrayListDemo {
         Iterator<Integer> itr = list.iterator();
         while (itr.hasNext()) {
 
-            System.out.println("Looping through iterator: " + itr.next());
-            if (itr.next() == 300) {
+            if (itr.next() == 200) {
                 itr.remove();
             }
         }

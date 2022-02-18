@@ -1,4 +1,4 @@
-package Examples.Operators;
+package Operators;
 
 public class CountDigit {
 

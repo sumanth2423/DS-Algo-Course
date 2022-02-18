@@ -1,5 +1,3 @@
-package Examples;
-
 public class ArrayDemo {
 
   /*

@@ -1,5 +1,3 @@
-package Examples.Operators;
-
 public class Division {
 
     /*
