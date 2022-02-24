@@ -1,5 +1,3 @@
-import javax.lang.model.util.ElementScanner14;
-
 public class FindCeilingNumber {
 
  // Given an array of numbers sorted in an ascending order, find the ceiling of a
@@ -25,7 +23,6 @@ public class FindCeilingNumber {
 
   while (startIndex <= endIndex) {
    int middleIndex = startIndex + (endIndex - startIndex) / 2;
-
    if (arr[middleIndex] > key) {
     endIndex = middleIndex - 1;
    } else if (arr[middleIndex] < key) {
