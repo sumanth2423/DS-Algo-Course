@@ -4,20 +4,20 @@ array = [2,1,5,6]
 Linked list = 3 -> 1 -> 4 -> 2
 Reads from left to right
 
-Array memory allocation: allocated back to back memeory slots
+Array memory allocation: allocated back to back memory slots
 
     Memory slots:
-    each memory solt takes 8 bits
+    each memory slot takes 8 bits
         for 64 bit integer we need total 8 memory slots
         for 32 bit integer we need total 4 memory slots
 
     For above example we need back to back memory slots
 
-Biggest benetif of LinkedList, in comparision of an array, is that in a LinkedList, in comparision to an array, is that when new elements are added or removed, the other elements are not rearranged.
+Biggest benefit of LinkedList, in comparison of an array, is that in a LinkedList, in comparison to an array, is that when new elements are added or removed, the other elements are not rearranged.
 
 Linked list store elements anywhere in the memory unlike arrays which are stored back to back
 Elements are connected using pointers
-Pointers allows to have one memeory slot point to another memeory slot just by storing other memory slot address
+Pointers allows to have one memory slot point to another memory slot just by storing other memory slot address
 
 Node:
 each node in linked list has value and pointer to next node
