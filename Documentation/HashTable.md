@@ -21,3 +21,6 @@ Two types of Hash Tables
 The principle of Hash Table
 
 - Hash table uses concept of hash function to calculate which bucket the value should be inserted or retrieved for a given key
+- When we insert a new key, the hash function will decide which bucket the key should be assigned and the key will be stored in the corresponding bucket
+- When we want to search for a key, the hash table will use the same hash function to find the corresponding bucket and search only in the specific bucket
+- Perfect hash function will be a one-one mapping between the key and the bucket
